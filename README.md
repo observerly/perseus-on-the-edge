@@ -1,6 +1,6 @@
-![@observerly:perseus](https://user-images.githubusercontent.com/84131395/173381911-b9d8641a-548a-49ca-8b73-052535d708ef.jpg)
+[![@observerly:perseus-on-the-edge](./.github/assets/banner.png)](https://perseus.observerly.com)
 
-The on-demand, on-the-edge API of stars, galaxies and other astronomical bodies.
+The experimental on-demand, on-the-edge API of stars, galaxies and other astronomical bodies.
 
 ---
 
