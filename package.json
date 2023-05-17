@@ -1,0 +1,19 @@
+{
+  "name": "@observerly/perseus-on-the-edge",
+  "private": true,
+  "version": "0.1.0",
+  "description": "observerly's Edge runtime API of stars, galaxies and other astronomical bodies, adhering to the OpenAAS standard.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/observerly/perseus-on-the-edge.git"
+  },
+  "author": "Micheal J. Roberts",
+  "scripts": {
+    "dev": "npx nitropack dev",
+    "build": "npx nitropack build",
+    "preview": "node .output/server/index.mjs"
+  },
+  "dependencies": {
+    "nitropack": "latest"
+  }
+}
