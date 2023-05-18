@@ -11,7 +11,8 @@
   "scripts": {
     "dev": "npx nitropack dev",
     "build": "npx nitropack build",
-    "preview": "node .output/server/index.mjs"
+    "preview": "node .output/server/index.mjs",
+    "generate": "drizzle-kit generate:sqlite"
   },
   "dependencies": {
     "better-sqlite3": "^8.3.0",
