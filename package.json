@@ -18,7 +18,8 @@
     "@libsql/client": "^0.1.6",
     "better-sqlite3": "^8.3.0",
     "drizzle-orm": "^0.25.4",
-    "nitropack": "latest"
+    "nitropack": "latest",
+    "pathe": "^1.1.0"
   },
   "devDependencies": {
     "drizzle-kit": "^0.17.6"
