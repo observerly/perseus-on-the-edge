@@ -132,3 +132,6 @@ dist
 # Nitropack generated
 .nitro
 .output
+
+# LibSQL generated
+*.sqlite
