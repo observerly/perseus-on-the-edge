@@ -12,7 +12,8 @@
     "dev": "npx nitropack dev",
     "build": "npx nitropack build",
     "preview": "node .output/server/index.mjs",
-    "generate": "drizzle-kit generate:sqlite"
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "dotenv -e .env command -- tsx server/db/apply.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.1.6",
@@ -23,6 +24,8 @@
     "ulid": "^2.3.0"
   },
   "devDependencies": {
-    "drizzle-kit": "^0.17.6"
+    "dotenv-cli": "^7.2.1",
+    "drizzle-kit": "^0.17.6",
+    "tsx": "^3.12.7"
   }
 }
