@@ -19,6 +19,7 @@
     "@libsql/client": "^0.1.6",
     "better-sqlite3": "^8.3.0",
     "drizzle-orm": "^0.25.4",
+    "h3": "^1.6.6",
     "nitropack": "latest",
     "pathe": "^1.1.0",
     "ulid": "^2.3.0"
