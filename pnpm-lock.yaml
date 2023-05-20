@@ -8,8 +8,8 @@ dependencies:
     specifier: ^8.3.0
     version: 8.3.0
   drizzle-orm:
-    specifier: ^0.25.4
-    version: 0.25.4(@libsql/client@0.1.6)(better-sqlite3@8.3.0)
+    specifier: ^0.26.0
+    version: 0.26.0(@libsql/client@0.1.6)(better-sqlite3@8.3.0)
   h3:
     specifier: ^1.6.6
     version: 1.6.6
@@ -28,8 +28,8 @@ devDependencies:
     specifier: ^7.2.1
     version: 7.2.1
   drizzle-kit:
-    specifier: ^0.17.6
-    version: 0.17.6
+    specifier: ^0.18.0
+    version: 0.18.0
   vite:
     specifier: ^4.3.8
     version: 4.3.8(@types/node@20.1.7)
@@ -1178,8 +1178,8 @@ packages:
       wordwrap: 1.0.0
     dev: true
 
-  /drizzle-kit@0.17.6:
-    resolution: {integrity: sha512-diNslu/ItzLv+++7l2noevXaCOrsfDXv+ZxMJWOy061Gs1BeEhP0t+mBKqeOPy8LsEo0aitNKOe+gPltEScmWQ==}
+  /drizzle-kit@0.18.0:
+    resolution: {integrity: sha512-43oH0XNWJDfMmVtDVnW8OV+tIs3xXDb1MjdsDiv0a7unQAylr0hpGG0HD5uEPWSbt7oxBots+hnYWxo98D0KAg==}
     hasBin: true
     dependencies:
       camelcase: 7.0.1
@@ -1190,13 +1190,14 @@ packages:
       glob: 8.1.0
       hanji: 0.0.5
       json-diff: 0.9.0
+      minimatch: 7.4.6
       zod: 3.21.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /drizzle-orm@0.25.4(@libsql/client@0.1.6)(better-sqlite3@8.3.0):
-    resolution: {integrity: sha512-vURs2SqDh5pk81WWE4hR8gFKDTRmCK4FbaUGsZoljKnjKvMrjlA5xFPGiCih4/1XKqnOgSuh+I6T9KGBjYcPAA==}
+  /drizzle-orm@0.26.0(@libsql/client@0.1.6)(better-sqlite3@8.3.0):
+    resolution: {integrity: sha512-ztjhHehcuG5+lpGYxfT/L5I+yd/Z0dOf0fV3cS2ywBU01wkpxjwl4EJZVT7kVzjYfM8kwMGDghAPRPBCK0vULA==}
     peerDependencies:
       '@aws-sdk/client-rds-data': '>=3'
       '@cloudflare/workers-types': '>=3'
@@ -2276,6 +2277,13 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       brace-expansion: 2.0.1
+
+  /minimatch@7.4.6:
+    resolution: {integrity: sha512-sBz8G/YjVniEz6lKPNpKxXwazJe4c19fEfV2GDMX6AjFz+MX9uDWIZW8XreVhkFW3fkIdTv/gxWr/Kks5FFAVw==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: true
 
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}

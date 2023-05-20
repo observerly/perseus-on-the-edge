@@ -19,7 +19,7 @@
   "dependencies": {
     "@libsql/client": "^0.1.6",
     "better-sqlite3": "^8.3.0",
-    "drizzle-orm": "^0.25.4",
+    "drizzle-orm": "^0.26.0",
     "h3": "^1.6.6",
     "nitropack": "latest",
     "pathe": "^1.1.0",
@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "dotenv-cli": "^7.2.1",
-    "drizzle-kit": "^0.17.6",
+    "drizzle-kit": "^0.18.0",
     "vite": "^4.3.8",
     "vitest": "^0.31.1"
   }
