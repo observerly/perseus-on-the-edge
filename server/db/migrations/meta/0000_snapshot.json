@@ -1,0 +1,178 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "id": "5c0b05d6-082e-4f0c-8b7b-3452b139b4ac",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "bodies": {
+      "name": "bodies",
+      "columns": {
+        "uid": {
+          "name": "uid",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "iau": {
+          "name": "iau",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ra": {
+          "name": "ra",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "μra": {
+          "name": "μra",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "dec": {
+          "name": "dec",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "μdec": {
+          "name": "μdec",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "constellation": {
+          "name": "constellation",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "type": {
+          "name": "type",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "appm": {
+          "name": "appm",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "absM": {
+          "name": "absM",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "d": {
+          "name": "d",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hd": {
+          "name": "hd",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hr": {
+          "name": "hr",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "hip": {
+          "name": "hip",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "bd": {
+          "name": "bd",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "flamsteed": {
+          "name": "flamsteed",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "messier": {
+          "name": "messier",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ngc": {
+          "name": "ngc",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "ic": {
+          "name": "ic",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "e": {
+          "name": "e",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "a": {
+          "name": "a",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "b": {
+          "name": "b",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "i": {
+          "name": "i",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "z": {
+          "name": "z",
+          "type": "numeric",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "simbad": {
+          "name": "simbad",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
