@@ -31,11 +31,12 @@ declare module 'h3' {
  * @param {H3Event} event
  *
  */
-export const createContext = async (_event: H3Event) => {
+export const createContext = async (event: H3Event) => {
   const { db } = useRuntimeConfig()
 
   return {
-    db: useDb(db)
+    db: useDb(db),
+    ...event.node
   }
 }
 
