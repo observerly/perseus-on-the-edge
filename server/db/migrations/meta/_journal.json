@@ -1,0 +1,13 @@
+{
+  "version": "5",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1684509803475,
+      "tag": "0000_quiet_black_hole",
+      "breakpoints": true
+    }
+  ]
+}
