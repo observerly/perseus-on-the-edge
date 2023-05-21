@@ -18,11 +18,13 @@
   },
   "dependencies": {
     "@libsql/client": "^0.1.6",
+    "@trpc/server": "^10.27.1",
     "better-sqlite3": "^8.3.0",
     "drizzle-orm": "^0.26.0",
     "h3": "^1.6.6",
     "nitropack": "latest",
     "pathe": "^1.1.0",
+    "trpc-nitro-adapter": "0.2.0",
     "ulid": "^2.3.0"
   },
   "devDependencies": {
