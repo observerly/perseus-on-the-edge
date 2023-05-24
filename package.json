@@ -26,7 +26,8 @@
     "pathe": "^1.1.0",
     "superjson": "^1.12.3",
     "trpc-nitro-adapter": "0.2.0",
-    "ulid": "^2.3.0"
+    "ulid": "^2.3.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "dotenv-cli": "^7.2.1",
