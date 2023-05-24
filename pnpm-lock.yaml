@@ -4,6 +4,9 @@ dependencies:
   '@libsql/client':
     specifier: ^0.1.6
     version: 0.1.6
+  '@observerly/polaris':
+    specifier: ^0.65.0
+    version: 0.65.0
   '@trpc/server':
     specifier: ^10.27.1
     version: 10.27.1
@@ -381,6 +384,10 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: false
+
+  /@observerly/polaris@0.65.0:
+    resolution: {integrity: sha512-DtA1hDcQLOoVqHaR1oedwE1jBrGaXNq5KR7f3k+A5kSmKaKNbMTWnlBUNYDjD8m9U+qrMGhgnKXhF+RBtjPMSw==, tarball: https://npm.pkg.github.com/download/@observerly/polaris/0.65.0/3036012ca03b52ced129b92291af803a530f14f9}
     dev: false
 
   /@rollup/plugin-alias@5.0.0(rollup@3.22.0):
