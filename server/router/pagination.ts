@@ -13,10 +13,12 @@ import { publicProcedure } from './trpc'
 /*****************************************************************************************************************/
 
 export const publicPaginatedProcedure = publicProcedure.input(
-  z.object({
-    skip: z.number().default(0),
-    take: z.number().default(20)
-  })
+  z
+    .object({
+      skip: z.number().optional().default(0),
+      take: z.number().optional().default(10)
+    })
+    .default({ skip: 0, take: 10 })
 )
 
 /*****************************************************************************************************************/
