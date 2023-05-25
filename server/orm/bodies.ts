@@ -6,11 +6,71 @@
 
 /*****************************************************************************************************************/
 
-import { sql } from 'drizzle-orm'
-
-import { bodies } from '../db/schema/bodies'
+import { eq, gte, lte, sql } from 'drizzle-orm'
 
 import { type LibSQLDatabase } from 'drizzle-orm/libsql'
+
+import { type GeographicCoordinate, convertEquatorialToHorizontal } from '@observerly/polaris'
+
+import { type Body, bodies } from '../db/schema/bodies'
+
+/*****************************************************************************************************************/
+
+/**
+ *
+ * getBodiesForObserver() convenience method
+ *
+ * @param db an instance of the LibSQLDatabase class
+ * @param observer of type GeographicCoordinate
+ * @param datetime of type Date
+ * @returns an array of bodies that are currently above the local observer's horizon
+ *
+ */
+export const getBodiesForObserver = async (
+  db: LibSQLDatabase,
+  observer: GeographicCoordinate,
+  datetime: Date,
+  horizon: number = 0
+) => {
+  const { latitude } = observer
+
+  // Create a subquery to filter out bodies that are always below
+  // the local observer's horizon:
+  const sq = db
+    .$with('sq')
+    .as(db.select({ dec: sql<number>`cast(${bodies.dec} as float)`.as('dec') }).from(bodies))
+
+  const results = await db
+    .with(sq)
+    .select()
+    .from(bodies)
+    .where(latitude >= 0 ? gte(sq.dec, latitude - 90) : lte(sq.dec, latitude + 90))
+    .orderBy(bodies.uid)
+    .all()
+
+  // Further filter the results to only include bodies that are currently
+  // above the local observer's horizon, i.e., the observered { alt } is
+  // greater than 0:
+  return results
+    .map(body => {
+      const ra = parseFloat(body.ra)
+
+      const dec = parseFloat(body.dec)
+
+      const { alt, az } = convertEquatorialToHorizontal({ ra, dec }, observer, datetime)
+
+      return {
+        ...body,
+        ra,
+        dec,
+        alt,
+        az
+      }
+    })
+    .filter(body => {
+      return body.alt > horizon
+    })
+}
 
 /*****************************************************************************************************************/
 
@@ -20,6 +80,7 @@ import { type LibSQLDatabase } from 'drizzle-orm/libsql'
  *
  * @param db an instance of the LibSQLDatabase class
  * @returns the total number of rows in the bodies table
+ *
  */
 export const getCount = async (db: LibSQLDatabase) => {
   const count = await db
