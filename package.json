@@ -14,7 +14,8 @@
     "preview": "node .output/server/index.mjs",
     "test": "vitest",
     "db:generate": "drizzle-kit generate:sqlite",
-    "db:push": "dotenv -e .env command -- tsx server/db/apply.ts"
+    "db:push": "dotenv -e .env command -- tsx server/db/apply.ts",
+    "db:seed": "dotenv -e .env command -- tsx server/db/seed.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.1.6",
