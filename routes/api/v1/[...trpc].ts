@@ -8,6 +8,8 @@
 
 import { defineCORSEventHandler } from 'nitro-cors'
 
+import { defineHelmetEventHandler } from 'nitro-helmet'
+
 import { defineNitroTRPCEventHandler } from 'trpc-nitro-adapter'
 
 import { appRouter as router } from '../../../server/router'
@@ -23,9 +25,14 @@ const trpcHandler = defineNitroTRPCEventHandler({
 
 /*****************************************************************************************************************/
 
-export default defineCORSEventHandler(trpcHandler, {
-  origin: '*',
-  methods: ['GET', 'OPTIONS']
-})
+export default defineHelmetEventHandler(
+  defineCORSEventHandler(trpcHandler, {
+    origin: '*',
+    methods: ['GET', 'OPTIONS']
+  }),
+  {
+    crossOriginResourcePolicy: 'cross-origin'
+  }
+)
 
 /*****************************************************************************************************************/
