@@ -22,6 +22,9 @@ dependencies:
   nitro-cors:
     specifier: ^0.3.0
     version: 0.3.0
+  nitro-helmet:
+    specifier: ^0.2.0
+    version: 0.2.0
   nitropack:
     specifier: latest
     version: 2.4.1
@@ -2423,6 +2426,13 @@ packages:
 
   /nitro-cors@0.3.0:
     resolution: {integrity: sha512-RoAZZ9s7JTt4/WSg7ZitCoohapFzv+BJOYWM2ZIju6SK6zuoJWzyPz7ex/UjbK/yDAakcfIeJB0aoWr9AWwv+A==}
+    dependencies:
+      h3: 1.6.6
+      ufo: 1.1.2
+    dev: false
+
+  /nitro-helmet@0.2.0:
+    resolution: {integrity: sha512-N+kIqSg2/08vW/2Vvw9xGFqMb0bEaCoeWKAr7W8bPo8vV2ktJt/L0MMZ1j6ycNRMYAIfAufcGpMRzDDIl/tZLw==}
     dependencies:
       h3: 1.6.6
       ufo: 1.1.2
