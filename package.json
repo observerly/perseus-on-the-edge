@@ -24,7 +24,7 @@
     "better-sqlite3": "^8.3.0",
     "drizzle-orm": "^0.26.0",
     "h3": "^1.6.6",
-    "nitro-cors": "^0.1.0",
+    "nitro-cors": "^0.3.0",
     "nitropack": "latest",
     "pathe": "^1.1.0",
     "superjson": "^1.12.3",
