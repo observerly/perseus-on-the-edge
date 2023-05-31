@@ -23,8 +23,8 @@ dependencies:
     specifier: ^0.3.0
     version: 0.3.0
   nitro-helmet:
-    specifier: ^0.2.0
-    version: 0.2.0
+    specifier: ^0.3.0
+    version: 0.3.0
   nitropack:
     specifier: latest
     version: 2.4.1
@@ -2431,8 +2431,8 @@ packages:
       ufo: 1.1.2
     dev: false
 
-  /nitro-helmet@0.2.0:
-    resolution: {integrity: sha512-N+kIqSg2/08vW/2Vvw9xGFqMb0bEaCoeWKAr7W8bPo8vV2ktJt/L0MMZ1j6ycNRMYAIfAufcGpMRzDDIl/tZLw==}
+  /nitro-helmet@0.3.0:
+    resolution: {integrity: sha512-eyQ9WekRtv6PRBvXp1hoL/WohOgdLNVEEsTpolz4p6oxZ/uEQ9jqA13tNcriY7lyYTVV2/TJ/GdPyktanv4ulw==}
     dependencies:
       h3: 1.6.6
       ufo: 1.1.2
