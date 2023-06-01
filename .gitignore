@@ -135,3 +135,5 @@ dist
 
 # LibSQL generated
 *.sqlite
+
+playground
