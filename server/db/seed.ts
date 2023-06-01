@@ -16,6 +16,8 @@ import { type Body } from './schema/bodies'
 
 import { upsertBodyByUID } from '../orm/bodies'
 
+import { stars } from '../../data/stars'
+
 import { messier } from '../../data/messier'
 
 /*****************************************************************************************************************/
@@ -53,9 +55,15 @@ const seedBodies = async (db: LibSQLDatabase, values: Body[], action?: string) =
 /*****************************************************************************************************************/
 
 const seed = async (db: LibSQLDatabase) => {
+  // Seed the bodies table with Star objects:
+  console.log('Seeding the bodies table with Star objects...')
+  await seedBodies(db, stars, 'the bodies table with Star objects')
+
   // Seed the bodies table with Messier objects:
   console.log('Seeding the bodies table with Messier objects...')
   await seedBodies(db, messier, 'the bodies table with Messier objects')
+
+  // Done [!!]:
   console.log('Finished seeding the database.')
 }
 
