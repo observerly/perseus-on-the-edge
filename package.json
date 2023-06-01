@@ -15,7 +15,8 @@
     "test": "vitest",
     "db:generate": "drizzle-kit generate:sqlite",
     "db:push": "dotenv -e .env command -- tsx server/db/apply.ts",
-    "db:seed": "dotenv -e .env command -- tsx server/db/seed.ts"
+    "db:seed": "dotenv -e .env command -- tsx server/db/seed.ts",
+    "db:flush": "dotenv -e .env command -- tsx server/db/flush.ts"
   },
   "dependencies": {
     "@libsql/client": "^0.1.6",
