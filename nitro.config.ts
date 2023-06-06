@@ -1,7 +1,7 @@
 import { defineNitroConfig } from 'nitropack/config'
 
 export default defineNitroConfig({
-  preset: 'vercel',
+  preset: 'vercel-edge',
   routeRules: {
     '/': { redirect: '/api/v1/' },
     '/api/v1/**': {
