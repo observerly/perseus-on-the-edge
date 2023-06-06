@@ -187,26 +187,27 @@ export const bodies = sqliteTable('bodies', {
   bd: text('bd'),
   /**
    *
+   * Flamsteed Catalogue Number:
    *
-   *     # A Flamsteed designation is a combination of a number and constellation
-    # name that uniquely identifies most naked eye stars in the modern
-    # constellations visible from southern England. They are named for
-    # John Flamsteed who first used them while compiling his Historia
-    # Coelestis Britannica. (Flamsteed used a telescope,[1] and the catalog
-    #  also includes some stars which are relatively bright but not
-    # necessarily visible with the naked eye.)
+   * A Flamsteed designation is a combination of a number and constellation name that
+   * uniquely identifies most naked eye stars in the modern constellations visible
+   * from southern England. They are named for John Flamsteed who first used them
+   * while compiling his Historia Coelestis Britannica.
+   *
+   * N.B. Flamsteed used a telescope and the catalog also includes some stars which are
+   * relatively bright but not necessarily visible with the naked eye.
    *
    */
   flamsteed: text('flamsteed'),
   /**
    *
+   * Messier Catalogue Number:
    *
-   *     Messier Catalogue Number:
-    The Messier objects are a set of 110 astronomical objects catalogued by
-    the French astronomer Charles Messier in his Catalogue des Nébuleuses et
-    des Amas d'Étoiles (Catalogue of Nebulae and Star Clusters). Because
-    Messier was only interested in finding comets, he created a list of those
-    non-comet objects that frustrated his hunt for them.
+   * The Messier objects are a set of 110 astronomical objects catalogued by
+   * the French astronomer Charles Messier in his Catalogue des Nébuleuses et
+   * des Amas d'Étoiles (Catalogue of Nebulae and Star Clusters). Because
+   * Messier was only interested in finding comets, he created a list of those
+   * non-comet objects that frustrated his hunt for them.
    *
    */
   messier: text('messier'),
